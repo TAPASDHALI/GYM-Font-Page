@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(2, 85, 2, 0.912);
+    /* background-image: url(./img/10.jpg); */
+    /* padding: 0; */
+    /* margin: 0; */
+    /* background-size: cover; */
+    color: whitesmoke;
+
+}
+
+.left{
+    display: inline-block;
+    /* border: 4px solid blueviolet; */
+    position: absolute;
+    left: 34px;
+    top: 25px;
+}
+
+.left img{
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 16px;
+    filter: invert(100%);
+}
+
+.left div{
+
+    font-size: 14px;
+}
+
+.mid{
+    display: block;
+    width: 33%;
+    margin: 25px auto;
+    padding: 8px;
+    /* font-size: 15px; */
+    /* border: 4px solid hotpink; */
+    /* border-radius: 10px; */
+    /* box-shadow: 2px 4px 6px rgb(2, 45, 2); */
+}
+
+.navbar{
+    display: inline-block;
+    /* font-size: 18px; */
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+    /* padding: 34px 23px; */
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 34px 23px;
+}
+
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: rgb(206, 239, 228);
+}
+
+.right{
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 25px;
+    /* border: 4px solid violet; */
+}
+
+.btn{
+    border: 2px solid rgba(41, 66, 4, 0.933);
+    background-color: rgb(4, 45, 4);
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(1, 33, 1);
+    color: rgb(192, 232, 132);
+}
+
+.container{
+    /* border: 4px solid rgb(3, 155, 43); */
+    margin: 110px 100px;
+    padding: 80px;
+    border-radius: 26px;
+    width: 40%;
+    box-shadow: 2px 4px 6px #0c2b0c;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.form-group input{
+    display: block;
+    margin: 8px auto;
+    width: 301px;
+    padding: 2px;
+    text-align: center;
+    border: 2px solid #021e02;
+    border-radius: 5px;
+    font-size: 18px;
+    color: whitesmoke;
+    background-color: rgb(3, 53, 3);
+}
+
+.container button{
+    display: block;
+    padding: 8px;
+    margin: 15px auto;
+    width: 120px;
+}
