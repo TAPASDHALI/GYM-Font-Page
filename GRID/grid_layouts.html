@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layouts Using Template Area</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: grid;
+            /* height: 100vh; */
+            background-color: black;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'item1 item1 item1 item1'
+            'item2 item2 item3 item3'
+            'item4 item4 item4 item4'
+            ;
+        }
+
+        .item{
+            border: 2px solid whitesmoke;
+            color: black;
+            margin: 5px 10px;
+            padding: 16px;
+            border-radius: 7px;
+            box-shadow: inset 3px 3px 3px rgb(10, 0, 0);
+            /* font-size: 30px; */
+            text-align: center;
+        }
+
+        #item1{
+            grid-area: item1;
+            background-color: purple;
+            height: 30px;
+            font-size: 30px;
+        }
+
+        #item2{
+            grid-area: item2;
+            background-color: rgb(171, 151, 132);
+            margin-top: 10px;
+            font-size: 24px;
+            text-shadow: 1px 1px rgb(254, 249, 249);
+        }
+
+        #item2:hover{
+            transform: rotate(-1deg);
+        }
+
+        #item3{
+            grid-area: item3;
+            background-color: palegreen;
+            font-size: 24px;
+            text-shadow: 2px 2px rgb(254, 249, 249);
+        }
+
+        #item3:hover{
+            transform: rotate(1deg);
+            /* transform: skew(40deg); */
+        }
+
+        #item4{
+            grid-area: item4;
+            background-color: hotpink;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="item1" class="item">NAVBAR</div>
+        <div id="item2" class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eos eius sit magni pariatur, debitis officia nam voluptate in quis tenetur aperiam accusantium! 
+                Tempora quos, ea nostrum voluptates blanditiis impedit accusantium consectetur dolore aut corporis 
+                numquam quisquam neque? Cupiditate et iste blanditiis quos animi libero nesciunt, ipsum sequi dignissimos 
+                doloribus explicabo deserunt. Assumenda odit harum ea fuga architecto, dicta totam repellat hic expedita placeat 
+                repellendus rem modi suscipit quidem facere accusamus quia? Vel, repellendus magnam? Similique atque neque iure nulla! 
+                Provident inventore, adipisci modi quo at corrupti, eos numquam, quis obcaecati dolore debitis commodi cum molestias 
+                assumenda suscipit. Necessitatibus, ipsum reprehenderit.Provident inventore, adipisci modi quo at corrupti, eos numquam, quis obcaecati dolore debitis commodi cum molestias 
+                assumenda suscipit. Necessitatibus, ipsum reprehenderit.assumenda suscipit. Necessitatibus, ipsum reprehenderit.Provident inventore, adipisci modi quo at corrupti, eos numquam, quis obcaecati dolore debitis commodi cum molestias 
+                assumenda suscipit. Necessitatibus, ipsum reprehenderit.
+            </p>
+        </div>
+        <div id="item3" class="item">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eos eius sit magni pariatur, debitis officia nam voluptate in quis tenetur aperiam accusantium! 
+                Tempora quos, ea nostrum volupt ates blanditiis impedit accusantium consectetur dolore aut corporis 
+                numquam quisquam neque? Cupiditate et iste blanditiis quos animi libero nesciunt, ipsum sequi dignissimos 
+                doloribus explicabo deserunt. Assumenda odit harum ea fuga architecto, dicta totam repellat hic expedita placeat 
+                repellendus rem modi suscipit quidem facere accusamus quia? Vel, repellendus magnam? Similique atque neque iure nulla! 
+                Provident inventore, adipisci modi quo at corrupti, eos numquam, quis obcaecati dolore debitis commodi cum molestias 
+                assumenda suscipit. Necessitatibus, ipsum reprehenderit.Provident inventore, adipisci modi quo at corrupti, eos numquam, quis obcaecati dolore debitis commodi cum molestias 
+                assumenda suscipit. Necessitatibus, ipsum reprehenderit.assumenda suscipit. Necessitatibus, ipsum reprehenderit.Provident inventore, adipisci modi quo at corrupti, eos numquam, quis obcaecati dolore debitis commodi cum molestias 
+                assumenda suscipit. Necessitatibus, ipsum reprehenderit.
+            </p>
+        </div>
+        <div id="item4" class="item">FOOTER</div>
+    </div>    
+</body>
+</html>
